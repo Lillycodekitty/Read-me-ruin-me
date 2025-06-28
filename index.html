@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,11 +53,6 @@
       min-height: 80px;
       user-select: none;
     }
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
     .slider-container {
       margin-top: 1.2rem;
       text-align: center;
@@ -72,6 +66,19 @@
       font-weight: 600;
       color: #7a3c4a;
       user-select: none;
+    }
+    .favorites-section {
+      margin-top: 2rem;
+      background: #ffe4ec;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 600px;
+    }
+    .favorite-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #d69ba9;
+      padding-bottom: 0.5rem;
     }
   </style>
 </head>
@@ -111,8 +118,6 @@
       <option value="BDSM">BDSM</option>
       <option value="Mafia">Mafia</option>
       <option value="Religious">Religious</option>
-      <option value="Romantic Suspense">Romantic Suspense</option>
-      <option value="Thriller Romance">Thriller Romance</option>
     </select>
 
     <label for="spice">Choose Spice Level:</label>
@@ -127,6 +132,7 @@
 
     <button onclick="generateBook()">Give Me A Book</button>
     <div class="output" id="output">Your steamy book awaits, kitten...</div>
+    <button onclick="addToFavorites()" id="favoriteBtn" style="display:none;">❤️ Favorite This Book</button>
 
     <div class="slider-container" style="display:none;" id="readorride-container">
       <label for="readorride">Read or Ride?</label>
@@ -135,8 +141,13 @@
     </div>
   </div>
 
+  <div class="favorites-section" id="favorites">
+    <h2>My Favorite Books</h2>
+    <div id="favoritesList"></div>
+  </div>
+
   <script>
-    
+        
 const books = [
   {
     title: "Haunting & Hunting Adeline",
@@ -578,7 +589,7 @@ const books = [
     genre: "Dark Romance",
     tease: "Burning down the past to claim a ruthless future in love and war.",
     link: "#"
-  },
+  }
   {  
     title: "Bloodshed",  
     author: "Molly Doyle",  
@@ -589,7 +600,10 @@ const books = [
     link: "#"  
     }
 ];
-      function generateBook() {
+    
+    let currentBook = null;
+
+    function generateBook() {
       const tropeFilter = document.getElementById('trope').value;
       const genreFilter = document.getElementById('genre').value;
       const spiceFilter = document.getElementById('spice').value;
@@ -603,10 +617,12 @@ const books = [
       if(filtered.length === 0) {
         document.getElementById('output').textContent = "No books match your filthy criteria. Try again, kitten.";
         document.getElementById('readorride-container').style.display = 'none';
+        document.getElementById('favoriteBtn').style.display = 'none';
         return;
       }
 
       const chosen = filtered[Math.floor(Math.random() * filtered.length)];
+      currentBook = chosen;
 
       document.getElementById('output').innerHTML = `
         <strong>${chosen.title}</strong> by <em>${chosen.author}</em><br/>
@@ -614,9 +630,8 @@ const books = [
         <em>Genres & Tropes:</em> ${chosen.genre}, ${chosen.tropes.join(', ')}<br/>
         <em>Tease:</em> ${chosen.tease}
       `;
-
-      const sliderContainer = document.getElementById('readorride-container');
-      sliderContainer.style.display = 'block';
+      document.getElementById('readorride-container').style.display = 'block';
+      document.getElementById('favoriteBtn').style.display = 'inline-block';
 
       const slider = document.getElementById('readorride');
       slider.value = 5;
@@ -631,15 +646,4 @@ const books = [
       let msg = "";
 
       if(value <= 2) msg = "📖 Slow and steady. Just reading with a cozy blanket.";
-      else if(value <= 4) msg = "😊 Nice warm glow. You’re feeling the heat but staying composed.";
-      else if(value <= 6) msg = "🔥 Things are heating up. You might need to fan yourself soon.";
-      else if(value <= 8) msg = "😏 Oh, you naughty thing. Definitely riding that wave.";
-      else msg = "🍆 Absolutely wrecked. Humping the pages like a desperate brat.";
-
-      text.textContent = msg;
-    }
-  </script>
-</body>
-</html>
-
-  
+      else if(value <= 4) msg = "😊 Nice warm glow. You’re feeling the heat but stay
