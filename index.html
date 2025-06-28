@@ -629,11 +629,12 @@ const books = [
       currentBook = chosen;
 
       document.getElementById('output').innerHTML = `
-        <strong>${chosen.title}</strong> by <em>${chosen.author}</em><br/>
-        <em>Spice Level:</em> ${chosen.spice}<br/>
-        <em>Genres & Tropes:</em> ${chosen.genre}, ${chosen.tropes.join(', ')}<br/>
-        <em>Tease:</em> ${chosen.tease}
-      `;
+  <strong>${chosen.title}</strong> by <em>${chosen.author}</em><br/>
+  <em>Spice Level:</em> ${chosen.spice}<br/>
+  <em>Genres & Tropes:</em> ${chosen.genre}, ${chosen.tropes.join(', ')}<br/>
+  <em>Tease:</em> ${chosen.tease}<br/>
+  <a href="${chosen.link}" target="_blank" style="color:#a33a57; text-decoration: underline;">View on Goodreads</a>
+`;
       document.getElementById('readorride-container').style.display = 'block';
       document.getElementById('favoriteBtn').style.display = 'inline-block';
 
