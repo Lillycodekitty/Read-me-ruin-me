@@ -1,7 +1,7 @@
 /* 🌸 Base Styling */
 body {
   font-family: 'Georgia', serif;
-  background: url('https://github.com/Lillycodekitty/Read-me-ruin-me/raw/main/flowers.jpg');
+  background: url('https://images.unsplash.com/photo-1584945252302-02195949b127?auto=format&fit=crop&w=1600&q=80');
   background-color: #f9f0f3;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 /* 🌫 Soft Overlay for Contrast */
 body::before {
   content: "";
