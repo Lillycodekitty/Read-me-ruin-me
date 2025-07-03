@@ -431,33 +431,24 @@ const books = [
     tease: "An obsession that haunts her dreams and awakens forbidden desires.",
     link: "#"
   },
-  {
-    title: "Burned",
-    author: "L.J. Shen",
-    spice: "Utterly Destroyed",
-    tropes: ["Enemies to Lovers", "Dark Past", "Revenge"],
-    genre: "Dark Romance",
-    tease: "Burning down the past to claim a ruthless future in love and war.",
-    link: "#"
-  },
-  {  
-    title: "Bloodshed",  
-    author: "Molly Doyle",  
-    spice: "Ravished",  
-    tropes: ["Dark Past", "Why choose"],  
-    genre: "Dark Romance",  
-    tease: "We like book boyfriends who wear masks.",  
-    link: "#"  
-    },
-{
-  "title": "Double Play",
-  "author": "C.L. Rose",
-  "spice": "Ravished",
-  "tropes": [
-    "Why choose", "Sports Romance", "friends to lovers","forced proximity","BDSM","Angst"],
-  "genre": "Contemporary Romance ",
-  "tease": "He may know what she needs when she's in his arms. But when it comes to emptying every haunting thought from her mind? Im her Salvation.",
-  "link": "#"
+ {
+  title: "Bloodshed",  
+  author: "Molly Doyle",  
+  spice: "Ravished",  
+  tropes: ["Dark Past", "Why choose"],  
+  genre: "Dark Romance",  
+  tease: "We like book boyfriends who wear masks.",  
+  link: "#"  
 },
+{
+  title: "Double Play",
+  author: "C.L. Rose",
+  spice: "Ravished",
+  tropes: [
+    "Why choose", "Sports Romance", "Friends to Lovers", "Forced Proximity", "BDSM", "Angst"
+  ],
+  genre: "Contemporary Romance",
+  tease: "He may know what she needs when she's in his arms. But when it comes to emptying every haunting thought from her mind? I'm her Salvation.",
+  link: "#"
+}
 ];
-
