@@ -448,6 +448,22 @@ const books = [
     genre: "Dark Romance",  
     tease: "We like book boyfriends who wear masks.",  
     link: "#"  
-    }
+    },
+{
+  "title": "Double Play",
+  "author": "C.L. Rose",
+  "spice": "Ravished",
+  "tropes": [
+    "Why choose",
+    "Sports Romance",
+    "friends to lovers",
+    "forced proximity",
+    "BDSM",
+    "Angst"
+  ],
+  "genre": "Contemporary Romance ",
+  "tease": "He may know what she needs when she's in his arms. But when it comes to emptying every haunting thought from her mind? Im her Salvation.",
+  "link": "#"
+}
 ];
 
