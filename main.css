@@ -182,3 +182,28 @@ input[type=range] {
   border-bottom: 1px solid #d69ba9;
   padding-bottom: 0.5rem;
 }
+@media (max-width: 600px) {
+  .generator {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  select, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .favorites-section {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .output {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+}
