@@ -95,21 +95,40 @@ option:checked {
 /* 📖 Generator Card */
 .generator {
   max-width: 500px;
-  width: 90%;
+  width: 100%;
   background-color: rgba(255, 240, 244, 0.94);
   backdrop-filter: blur(3px);
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 20px #d89aaabb;
   border: 1px solid #e9b1c5;
-  margin-top: 2rem auto;
-  text-align: center;
-  align-self: centre;
-  /* 🔥 Center the form elements properly */
+  margin-top: 2rem;
+
+  /* 💥 Form structure control */
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* you can change to center if you want them narrow */
-  gap: 1rem; /* 🔥 adds spacing between your form groups */
+  align-items: stretch;
+  gap: 1.5rem;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #7a3c4a;
+  font-family: 'Playfair Display', serif;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ✍ Output Box */
@@ -162,19 +181,4 @@ input[type=range] {
   margin-bottom: 1rem;
   border-bottom: 1px solid #d69ba9;
   padding-bottom: 0.5rem;
-}
-/* 🧷 Fix form layout: label on top of select */
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 0.4rem;
-  color: #7a3c4a;
-  font-family: 'Playfair Display', serif;
 }
