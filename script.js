@@ -19,7 +19,7 @@ function generateBook() {
       document.getElementById('favoriteBtn').style.display = 'none';
       return;
     }
-
+  }
     const chosen = filtered[Math.floor(Math.random() * filtered.length)];
     currentBook = chosen;
 
