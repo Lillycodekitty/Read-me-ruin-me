@@ -2,12 +2,16 @@ let currentBook = null;
 
 function generateBook() {
   try {
-    const tropeFilter = document.getElementById('trope').value;
+    const tropeSelect = document.getElementById('trope');
+    const selectedTropes = Array.from(tropeSelect.selectedOptions).map(option => option.value);
     const genreFilter = document.getElementById('genre').value;
     const spiceFilter = document.getElementById('spice').value;
 
     let filtered = books.filter(book => {
-      return (!tropeFilter || book.tropes.includes(tropeFilter)) &&
+      const matchesTropes = selectedTropes.length === 0 || 
+        selectedTropes.some(trope => book.tropes.includes(trope));
+
+      return matchesTropes &&
              (!genreFilter || book.genre === genreFilter) &&
              (!spiceFilter || book.spice === spiceFilter);
     });
