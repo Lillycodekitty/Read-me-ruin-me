@@ -1,14 +1,27 @@
 /* 🌸 Base Styling */
 body {
   font-family: 'Georgia', serif;
-  background: url('https://www.transparenttextures.com/patterns/floral-white.png');
+  background: url('https://i.imgur.com/7gJ8dWl.png'); /* Clearer floral pattern */
   background-color: #f9f0f3;
   background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #5a2e3e;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+/* 🌫 Soft Overlay for Contrast */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(249, 240, 243, 0.75);
+  z-index: -1;
 }
 
 /* 🖋 Header */
