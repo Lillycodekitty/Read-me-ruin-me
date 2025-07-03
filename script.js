@@ -86,3 +86,4 @@ function renderFavorites() {
 }
 
 window.onload = renderFavorites;
+winow.generateBook = generateBook;
