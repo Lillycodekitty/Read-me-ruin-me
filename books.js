@@ -445,7 +445,7 @@ const books = [
     author: "Molly Doyle",  
     spice: "Ravished",  
     tropes: ["Dark Past", "Why choose"],  
-    genre: "Dark Romance",  
+    genre: "Dark Romance"  
     tease: "We like book boyfriends who wear masks.",  
     link: "#"  
     },
@@ -454,16 +454,10 @@ const books = [
   "author": "C.L. Rose",
   "spice": "Ravished",
   "tropes": [
-    "Why choose",
-    "Sports Romance",
-    "friends to lovers",
-    "forced proximity",
-    "BDSM",
-    "Angst"
-  ],
+    "Why choose", "Sports Romance", "friends to lovers","forced proximity","BDSM","Angst"],
   "genre": "Contemporary Romance ",
   "tease": "He may know what she needs when she's in his arms. But when it comes to emptying every haunting thought from her mind? Im her Salvation.",
   "link": "#"
-}
+},
 ];
 
