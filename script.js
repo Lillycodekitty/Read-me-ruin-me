@@ -1,3 +1,4 @@
+consol.log("Script.js loaded,baby.");
 let currentBook = null;
 
 function generateBook() {
