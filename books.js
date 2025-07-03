@@ -315,13 +315,13 @@ const books = [
     link: "#"
   },
   {
-    title: "Sin City Nights",
-    author: "C.J. Roberts",
+    title: "Sin City",
+    author: "C.J. Roberts, Daisy Dunn,ect",
     spice: "Ravished",
     tropes: ["Dark Romance", "Kidnapping", "Redemption"],
     genre: "Dark Romance",
     tease: "In a city of sin, love is the only escape.",
-    link: "#"
+    link: "https://www.goodreads.com/book/show/13335734-sin-city"
   },
   {
     title: "Chasing Shadows",
