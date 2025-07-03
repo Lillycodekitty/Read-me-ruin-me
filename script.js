@@ -85,4 +85,5 @@ function renderFavorites() {
   `).join('');
 }
 
+// Run this on page load to show any saved faves
 window.onload = renderFavorites;
