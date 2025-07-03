@@ -445,7 +445,7 @@ const books = [
     author: "Molly Doyle",  
     spice: "Ravished",  
     tropes: ["Dark Past", "Why choose"],  
-    genre: "Dark Romance"  
+    genre: "Dark Romance",  
     tease: "We like book boyfriends who wear masks.",  
     link: "#"  
     },
