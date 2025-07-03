@@ -450,5 +450,14 @@ const books = [
   genre: "Contemporary Romance",
   tease: "He may know what she needs when she's in his arms. But when it comes to emptying every haunting thought from her mind? I'm her Salvation.",
   link: "#"
+},
+{
+  "title": "Butcher and Blackbird ",
+  "author": "Brynne Weaver",
+  "spice": "Ravished ",
+  "tropes": ["Morally grey","Dark romance","serial killers","Dark Humour"],
+  "genre": "Dark romance",
+  "tease": "Two charming killers, one unholy alliance. Love was never meant to be clean.",
+  "link": "#"
 }
 ];
