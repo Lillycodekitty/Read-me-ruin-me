@@ -46,28 +46,6 @@ function generateBook() {
     console.error("Something broke, kitten:", err);
     document.getElementById('output').textContent = 
       "Oops. Daddy broke something. Try again or refresh.";
-  }
-
-  const chosen = filtered[Math.floor(Math.random() * filtered.length)];
-  currentBook = chosen;
-
-  document.getElementById('output').innerHTML = `
-    <strong>${chosen.title}</strong> by <em>${chosen.author}</em><br/>
-    <em>Spice Level:</em> ${chosen.spice}<br/>
-    <em>Genres & Tropes:</em> ${chosen.genre}, ${chosen.tropes.join(', ')}<br/>
-    <em>Tease:</em> ${chosen.tease}<br/>
-    <a href="${chosen.link}" target="_blank" style="color:#a33a57; text-decoration: underline;">View on Goodreads</a>
-  `;
-
-  document.getElementById('readorride-container').style.display = 'block';
-  document.getElementById('favoriteBtn').style.display = 'inline-block';
-
-  const slider = document.getElementById('readorride');
-  slider.value = 5;
-  updateReadOrRideText(5);
-  slider.oninput = function() {
-    updateReadOrRideText(this.value);
-  };
 }
 
 function updateReadOrRideText(value) {
