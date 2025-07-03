@@ -53,10 +53,10 @@ function updateReadOrRideText(value) {
   const text = document.getElementById('readorride-text');
   let msg = "";
 
-  if(value <= 2) msg = "📖 Slow and steady. Just reading with a cozy blanket.";
-  else if(value <= 4) msg = "😊 Nice warm glow. You’re feeling the heat but staying composed.";
-  else if(value <= 6) msg = "🔥 Things are heating up. You might need to fan yourself soon.";
-  else if(value <= 8) msg = "😏 Oh, you naughty thing. Definitely riding that wave.";
+  if (value <= 2) msg = "📖 Slow and steady. Just reading with a cozy blanket.";
+  else if (value <= 4) msg = "😊 Nice warm glow. You’re feeling the heat but staying composed.";
+  else if (value <= 6) msg = "🔥 Things are heating up. You might need to fan yourself soon.";
+  else if (value <= 8) msg = "😏 Oh, you naughty thing. Definitely riding that wave.";
   else msg = "🍆 Absolutely wrecked. Humping the pages like a desperate brat.";
 
   text.textContent = msg;
@@ -86,4 +86,3 @@ function renderFavorites() {
 }
 
 window.onload = renderFavorites;
-winow.generateBook = generateBook;
