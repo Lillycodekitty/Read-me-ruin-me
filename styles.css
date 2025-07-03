@@ -1,17 +1,17 @@
 /* 🌸 Base Styling */
 body {
   font-family: 'Georgia', serif;
-  background-image: url('https://www.transparenttextures.com/patterns/vintage-wallpaper.png');
+  background: url('https://images.unsplash.com/photo-1604537466608-109fa0bbab79?auto=format&fit=crop&w=1600&q=80');
   background-color: #f9f0f3;
-  background-repeat: repeat;
-  background-size: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #5a2e3e;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 /* 🌫 Soft Overlay for Contrast */
 body::before {
   content: "";
