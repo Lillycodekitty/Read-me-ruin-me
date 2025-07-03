@@ -1,1 +1,86 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #f9f0f3;
+  color: #5a2e3e;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #a33a57;
+  margin-bottom: 1rem;
+}
+
+select, button {
+  margin: 0.5rem 0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c77a8b;
+  font-size: 1rem;
+  background: #f8d9e0;
+  color: #5a2e3e;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+select:hover, button:hover {
+  background: #c77a8b;
+  color: #fff;
+}
+
+.generator {
+  max-width: 500px;
+  width: 100%;
+  background: #fff0f4;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #e4a1b1aa;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.output {
+  margin-top: 1.5rem;
+  background: #f7c7d4;
+  border-radius: 0.8rem;
+  padding: 1rem 1.5rem;
+  color: #481a2d;
+  font-style: italic;
+  min-height: 80px;
+  user-select: none;
+}
+
+.slider-container {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+input[type=range] {
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+.readorride-text {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #7a3c4a;
+  user-select: none;
+}
+
+.favorites-section {
+  margin-top: 2rem;
+  background: #ffe4ec;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.favorite-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d69ba9;
+  padding-bottom: 0.5rem;
+}
 
