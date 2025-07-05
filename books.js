@@ -1,5 +1,5 @@
 const books = [
-  {
+{
     title: "Haunting & Hunting Adeline",
     author: "H.D. Carlton",
     spice: "Utterly Destroyed",
@@ -459,5 +459,14 @@ const books = [
   "genre": "Dark romance",
   "tease": "Two charming killers, one unholy alliance. Love was never meant to be clean.",
   "link": "#"
-}
+},
+  {
+    title: "The c*ck down the block",
+    author: "Amy Award",
+    spice: "Heated",
+    tropes: ["Friends to lovers", "Sports romance", "NHL Football", "Contemporary romance"],
+    genre: "Contemporary Romance",
+    tease: "When the guy next door becomes becomes the one she cant resist, friendship blurs into something dangerousy sweet.",
+    link: "#"
+  }
 ];
